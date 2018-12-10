@@ -1,0 +1,3 @@
+/home/netta/CLionProjects/Sniffer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/netta/CLionProjects/Sniffer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/netta/CLionProjects/Sniffer/cmake-build-debug/CMakeFiles/Sniffer.dir

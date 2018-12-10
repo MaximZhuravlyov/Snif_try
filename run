@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo cmake-build-debug/Sniffer wlp3s0 udp src or dst port 53
