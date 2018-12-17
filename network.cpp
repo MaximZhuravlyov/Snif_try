@@ -56,8 +56,8 @@ void handle_packet(uint8_t* user, const struct pcap_pkthdr *hdr,
            dest_port,
            data_size,
            data_size);*/
-    cout << "\n" << source_ip << ":" << source_port << " -> " <<  dest_ip << ":" << dest_port << ", " <<  data_size
-      <<  " (0x" << hex << data_size << ") bytes\n\n";
+    std::cout << "\n" << source_ip << ":" << source_port << " -> " <<  dest_ip << ":" << dest_port << ", " <<  data_size
+      <<  " (0x" << std::hex << data_size << ") bytes\n\n" << std::dec;
     char saddr[INET_ADDRSTRLEN];
     char daddr[INET_ADDRSTRLEN];
     inet_ntop(AF_INET, &(ip_header->saddr), saddr, INET_ADDRSTRLEN);
