@@ -49,13 +49,15 @@ void handle_packet(uint8_t* user, const struct pcap_pkthdr *hdr,
                     ip_header_size - sizeof(struct udphdr);
     }
 
-    printf("\n%s:%d -> %s:%d, %d (0x%x) bytes\n\n",
+    /*printf("\n%s:%d -> %s:%d, %d (0x%x) bytes\n\n",
            source_ip,
            source_port,
            dest_ip,
            dest_port,
            data_size,
-           data_size);
+           data_size);*/
+    cout << "\n" << source_ip << ":" << source_port << " -> " <<  dest_ip << ":" << dest_port << ", " <<  data_size
+      <<  " (0x" << hex << data_size << ") bytes\n\n";
     char saddr[INET_ADDRSTRLEN];
     char daddr[INET_ADDRSTRLEN];
     inet_ntop(AF_INET, &(ip_header->saddr), saddr, INET_ADDRSTRLEN);
